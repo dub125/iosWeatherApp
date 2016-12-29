@@ -16,10 +16,18 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var currentWeatherType: UILabel!
     @IBOutlet weak var tableView: UITableView!
 
+    
+    let currentWeather = CurrentWeather()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        currentWeather.downloadWeatherDetails {
+            //setup UI after download
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
