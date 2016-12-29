@@ -82,7 +82,7 @@
                                 <rect key="frame" x="0.0" y="374" width="414" height="362"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="75" id="4mH-fp-Bf3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="75" id="4mH-fp-Bf3" customClass="WeatherCell" customModule="Weather_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4mH-fp-Bf3" id="m16-P0-g57">
@@ -148,6 +148,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="9Jr-TO-BH9" id="4tx-RV-9xD"/>
+                                            <outlet property="highTempLabel" destination="Oat-Q3-gry" id="Mw0-uO-e5z"/>
+                                            <outlet property="lowTempLabel" destination="uaF-AF-jA3" id="ux8-sa-wjS"/>
+                                            <outlet property="weatherImage" destination="TVg-ay-gwi" id="Nf1-SO-xfR"/>
+                                            <outlet property="weatherTypeLabel" destination="r5g-P8-IOk" id="k01-er-5kv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
